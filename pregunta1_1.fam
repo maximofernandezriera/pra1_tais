@@ -1,0 +1,34 @@
+Person John {
+    Surname: Smith
+    Parent: Ray
+    Parent: Mary
+    Sibling: Anna
+    Sibling: Will
+    Age: 45
+    Child: Nestor
+}
+
+Person Anna {
+    Surname: Smith
+    Parent: Ray
+    Parent: Mary
+    Sibling: John
+    Sibling: Will
+    Age: 38
+}
+
+Person Will {
+    Surname: Smith
+    Parent: Ray
+    Parent: Mary
+    Sibling: John
+    Sibling: Anna
+    Age: 42
+}
+
+Person Micol {
+    Surname: Smith
+    Parent: John
+    Parent: Susan
+    Age: 5
+}
