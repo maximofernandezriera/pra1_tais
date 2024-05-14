@@ -1,0 +1,39 @@
+Person John {
+    Surname: Smith
+    Parent: Ray
+    Parent: Mary
+    Sibling: Anna
+    Sibling: Will
+    Age: 45
+    Child: Nestor
+    City: Madrid
+}
+
+Person Anna {
+    Surname: Smith
+    Parent: Ray
+    Parent: Mary
+    Sibling: John
+    Sibling: Will
+    Age: 38
+    City: Valencia
+}
+
+Person Will {
+    Surname: Smith
+    Parent: Ray
+    Parent: Mary
+    Sibling: John
+    Sibling: Anna
+    Age: 42
+    City: Sevilla
+}
+
+Person Micol {
+    Surname: Smith
+    Parent: John
+    Parent: Susan
+    Age: 5
+    City: Barcelona
+}
+
