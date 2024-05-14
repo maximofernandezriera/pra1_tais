@@ -1,0 +1,60 @@
+grammar org.xtext.example.bot.MyBot with org.eclipse.xtext.common.Terminals
+
+generate myBot "http://www.xtext.org/example/bot/MyBot"
+
+Bot:
+	{Bot}
+    'StartBot'
+    element+=Elements*
+    states+=State*
+    'EndBot';
+
+Elements:
+	'Elements'
+	'DaysTakenElement' daysTakenElement+=DaysTakenElement
+	'StartDateElement' startDateElement+=StartDateElement
+	'FinishDateElement' finishDateElement+=FinishDateElement
+	'EndElements'
+;
+
+DaysTakenElement:
+    value=INT;
+
+
+StartDateElement:
+    value=INT;
+
+FinishDateElement:
+    value=INT;
+
+
+State:
+'State' name=ID
+actionSay+=ActionSay
+(actionAsk+=ActionAsk)?
+(actionRecord+=ActionRecord)?
+'EndState'
+;
+
+ActionSay:
+'Say'
+text+=Text
+;
+ActionAsk:
+'Ask'
+text+=Text
+askVariable+=AskVariable
+;
+ActionRecord:
+'Record'
+text+=Text
+(askRecord+=AskRecord)*
+;
+Text: name=STRING
+;
+AskVariable:
+name=ID
+;
+AskRecord:
+name=ID
+;
