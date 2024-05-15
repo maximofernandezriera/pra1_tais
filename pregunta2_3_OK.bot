@@ -1,0 +1,25 @@
+StartBot
+Elements
+DaysTakenElement 7
+StartDateElement 20052024
+FinishDateElement 26052024
+EndElements
+State One
+Say "Welcome! This is the new chat to assist you to manage vacations. Let
+me ask you a few questions."
+Ask "How many days do you need?" DaysTaken
+EndState
+State Two
+Say "Perfect. Let's move on with the next question."
+Ask "What day do you want to start your vacation?" StartDate
+EndState
+State Three
+Say "Perfect. Let's ask one last question."
+Ask "What day do you want to finish your vacation?" FinishDate
+EndState
+State Four
+Say "OK, this is your vacation leave."
+Record "You can record this vacation leave, please!"
+DaysTaken StartDate FinishDate
+EndState
+EndBot
